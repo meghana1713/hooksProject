@@ -1,0 +1,20 @@
+html{
+  font-size:100%; // in html all elements by defaultly the size will be same as it's original size
+}
+p{
+  margin:0;
+}
+:root{
+  --yelcol:yellow;
+  --white:#fff;
+  --letterSpacing:1px;
+}
+h1,h2,h3,h4,h5{
+  margin:0;
+  letter-spacing:var(--letterSpacing);
+  background-color:var(--yelcol);
+}
+//Variables: The :root selector defines global CSS variables (--yelcol, --white, --letterSpacing) that can be reused throughout your CSS for consistent styling.
+//Ease of Maintenance: If you decide to change the letter spacing (e.g., to 2px), you only have to update it in one place (the :root section), and it will reflect everywhere you've used that variable.
+//Consistency: Using variables helps maintain consistent styling across your application, making it easier to manage design systems.
+//Reusability: If you need to use the same letter spacing (or any style) in multiple places, using a variable can help you avoid repetition.
